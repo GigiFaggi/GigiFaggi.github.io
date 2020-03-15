@@ -12,6 +12,20 @@
   src: URL('stuff/Comfortaa-Bold.ttf') format('truetype');
   }
 
+    .column {
+  float: right;
+  width: 33.33%;
+  padding: 10px;
+}
+
+  /* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 1100px) {
+  .column {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  }
+  
+
 </style>
 <html>
 
@@ -22,7 +36,7 @@
                 background-image:  url("stuff/overlay.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0)), url("stuff/07.jpg");
                 background-image:  url("stuff/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0)), url("stuff/07.jpg");
                 background-image:  linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0)), url("stuff/07.jpg");
-                background-position: center, center, auto;
+                background-position: top, right, auto;
                 background-size: auto, 100% 100%, cover;
                 background-attachment: float;
                 background-repeat: no-repeat, no-repeat, repeat;
@@ -36,13 +50,7 @@
   box-sizing: border-box;
 }
 
-/* Create three equal columns that floats next to each other */
-.column {
-  float: right;
-  width: 33.33%;
-  padding: 10px;
-  height: 330px; /* Should be removed. Only for demonstration */
-}
+
 </style>
 
 
@@ -72,10 +80,8 @@
 <p style="text-align: left;color: #ffffff;font-family: Confo;font-size:14pt">picobellobooking.wordpress.com</p>
   <p>&nbsp;</p>
   </div>
-    <div class="column">
+    <div class="spalten">
 
-  </div>
-  <div class="column" >
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
